@@ -1,4 +1,4 @@
-
+# Ainda em progresso.
 
 Passos para executar:
 
@@ -11,8 +11,8 @@ sh configurar-ambiente.sh
 Manual:
 ```bash
 docker network create --attachable -d bridge mydockernetwork
-docker-compose build
-docker-compose up -d
+docker compose build
+docker compose up -d
 echo "Ambiente pronto"
 
 ```

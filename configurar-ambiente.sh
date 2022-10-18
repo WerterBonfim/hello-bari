@@ -17,6 +17,7 @@
 #
 #  Exemplos:
 #      $ ./configurar-ambiente.sh
+#      ou bash configurar-ambiente.sh
 #      
 # ------------------------------------------------------------------------ #
 
@@ -34,8 +35,8 @@
 
 docker network create --attachable -d bridge mydockernetwork
 
-docker-compose build
+docker compose build
 
-docker-compose up -d
+docker compose up -d
 
 echo "Ambiente pronto"

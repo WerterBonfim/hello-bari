@@ -110,9 +110,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "9999:8080"
-    depends_on:
-      - werter-producer
-      - werter-consumer
+#    depends_on:
+#      - werter-producer
+#      - werter-consumer
     deploy:
       resources:
         limits:
