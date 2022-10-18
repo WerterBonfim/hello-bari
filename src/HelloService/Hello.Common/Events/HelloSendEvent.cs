@@ -10,4 +10,8 @@ public class HelloSendEvent : BaseEvent
 
     public string Message { get; set; }
     public DateTime DatePosted { get; set; }
+
+    public override string ToString() =>
+        $"Id: {Id} Mensagem: {Message}. TipoEvento: {Type} DataHora: {DatePosted}";
+    
 }

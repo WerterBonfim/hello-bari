@@ -7,8 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\CQRS.Core\CQRS.Core.csproj" />
-      <ProjectReference Include="..\..\..\Hello.Common\Hello.Common.csproj" />
+      <ProjectReference Include="..\..\CQRS.Core\CQRS.Core.csproj" />
+      <ProjectReference Include="..\..\Hello.Common\Hello.Common.csproj" />
     </ItemGroup>
+
+   
 
 </Project>

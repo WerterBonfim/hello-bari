@@ -2,6 +2,8 @@ using Werter.HelloQuery.Api.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSerilog(builder.Host);
+
 builder.Services.AddApiConfiguration(builder.Configuration);
 builder.Services.AddSwaggerConfiguration();
 

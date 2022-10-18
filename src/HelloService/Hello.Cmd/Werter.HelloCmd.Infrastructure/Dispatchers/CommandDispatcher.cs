@@ -1,3 +1,4 @@
+
 using CQRS.Core.Infrastructure;
 using CQRS.Core.Messages;
 

@@ -11,10 +11,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\..\CQRS.Core\CQRS.Core.csproj" />
-      <ProjectReference Include="..\..\Werter.HelloCmd.Domain\Werter.HelloCmd.Domain.csproj" />
-      <ProjectReference Include="..\..\Werter.HelloCmd.Infrastructure\Werter.HelloCmd.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Hello.Common\Hello.Common.csproj" />
+      <ProjectReference Include="..\Werter.HelloCmd.Domain\Werter.HelloCmd.Domain.csproj" />
+      <ProjectReference Include="..\Werter.HelloCmd.Infrastructure\Werter.HelloCmd.Infrastructure.csproj" />
     </ItemGroup>
+
+    
+   
 
 
 </Project>

@@ -1,17 +1,20 @@
 using Hello.Common.Events;
+using Microsoft.Extensions.Logging;
 
 namespace Werter.HelloQuery.Infrastructure.Handlers;
 
 public class EventHandler : IEventHandler
 {
-    
-    
+    private readonly ILogger<EventHandler> _logger;
+
+    public EventHandler(ILogger<EventHandler> logger)
+    {
+        _logger = logger;
+    }
+
     public Task On(HelloSendEvent @event)
     {
-
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine($"Mensagem consumida. Conteudo: {@event.Message} DataHoraPulbicação: {@event.DatePosted}");
-        
+        _logger.LogInformation(@event.ToString());
         return Task.CompletedTask;
     }
 }

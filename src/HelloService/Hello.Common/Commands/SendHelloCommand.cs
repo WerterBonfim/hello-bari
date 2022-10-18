@@ -1,6 +1,6 @@
 using CQRS.Core.Messages;
 
-namespace Werter.HelloCmd.Api.Commands;
+namespace Hello.Common.Commands;
 
 public class SendHelloCommand : BaseCommand
 {

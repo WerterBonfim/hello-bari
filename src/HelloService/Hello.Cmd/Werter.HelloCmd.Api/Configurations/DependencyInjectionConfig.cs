@@ -3,6 +3,7 @@ using CQRS.Core.Domain;
 using CQRS.Core.Handlers;
 using CQRS.Core.Infrastructure;
 using CQRS.Core.Producers;
+using Hello.Common.Commands;
 using Werter.HelloCmd.Api.Commands;
 using Werter.HelloCmd.Domain.Aggregates;
 using Werter.HelloCmd.Infrastructure.Config;
@@ -38,5 +39,7 @@ public static class DependencyInjectionConfig
         dispatcher.RegisterHandler<SendHelloCommand>(commandHandler.HandlerAsync);
 
         services.AddSingleton<ICommandDispatcher>(_ => dispatcher);
+
+        services.AddHostedService<HelloWorldHostedService>();
     }
 }

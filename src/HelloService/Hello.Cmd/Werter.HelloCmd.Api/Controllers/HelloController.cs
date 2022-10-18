@@ -1,4 +1,5 @@
 using CQRS.Core.Infrastructure;
+using Hello.Common.Commands;
 using Hello.Common.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Werter.HelloCmd.Api.Commands;

@@ -1,4 +1,5 @@
 using CQRS.Core.Handlers;
+using Hello.Common.Commands;
 using Werter.HelloCmd.Domain.Aggregates;
 
 namespace Werter.HelloCmd.Api.Commands;
