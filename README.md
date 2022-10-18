@@ -5,7 +5,7 @@ Passos para executar:
 No Linux:
 ```bash
 
-sh configurar-ambiente.sh
+bash configurar-ambiente.sh
 
 ```
 Manual:
