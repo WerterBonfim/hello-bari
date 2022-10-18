@@ -29,6 +29,3 @@ Para armazenar os eventos
 
 ### Dozzle
 O serviço dozzle serve para visualizar os logs dos container.
-
-
-
